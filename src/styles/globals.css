@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-cream: #F3EFE5;
+    --primary-purple: #4d65ff;
+    --accent-teal: #346778;
+    --dark-purple: #230D1E;
+    --text-dark: #2D2D2D;
+    --text-muted: #6B6B6B;
+  }
+
+  body {
+    @apply bg-cream text-dark font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
